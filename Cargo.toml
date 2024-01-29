@@ -1,0 +1,18 @@
+[package]
+name = "candle-esm"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+candle-nn = { git = "https://github.com/huggingface/candle.git", version = "0.3.3" }
+candle-core = { git = "https://github.com/huggingface/candle.git", version = "0.3.3" }
+candle-transformers = { git = "https://github.com/huggingface/candle.git", version = "0.3.3" }
+anyhow="*"
+tokenizers = "*"
+serde_json="*"
+rayon="*"
+serde="*"
+tracing = "*"
+uuid = {version="1.7", features = ["v4"]}
